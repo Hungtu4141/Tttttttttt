@@ -94,16 +94,6 @@ function UnEquipWeapon()
     end
 end
 
-_G.Color = Color3.fromRGB(85, 255, 127)
-_G.Logo = 13993235912
-wait(0.1)
-
-local Evil = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2duck/gui-/main/sillyhubfreegui.lua"))()
-local Win = library:Evil("Minaturi Hub","",_G.Logo )
-local Weapon = nil
-local tab1 = Win:CraftTab('Raid')
-local page1 = tab1:CraftPage('Raid',1)
-
 Settings = ReadSetting()
 spawn(function() 
     while wait(2) do SaveSettings() end
@@ -235,11 +225,16 @@ function Teleport(pos)
     plr.Character.HumanoidRootPart.CFrame = pos
 end
 
-local Load = Create:CreateLoading(false)
-local window = Create:window()
-local Tab1 = window:CreateTab("Function")
-local Tab2 = window:CreateTab("More")
-local Tab3 = window:CreateTab("Tele")
+
+_G.Color = Color3.fromRGB(85, 255, 127)
+_G.Logo = 13993235912
+wait(0.1)
+
+local Evil = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2duck/gui-/main/sillyhubfreegui.lua"))()
+local Win = library:Evil("Minaturi Hub","",_G.Logo )
+local Weapon = nil
+local tab1 = Win:CraftTab('Raid')
+local page1 = tab1:CraftPage('Raid',1)
 
 local page1 = Tab1:CreatePage(1,"Function")
 
